@@ -1,5 +1,5 @@
 while True:
-    value=input("Integer between 0 and 100:")
+    value=input("Integer between 1 and 100:")
     try:
         value=int(value)
     except ValueError:

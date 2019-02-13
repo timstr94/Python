@@ -12,7 +12,13 @@ Ask the user to enter two numbers and the arithemtic operation ("+", "-", "*" or
 
 number1=float(input("Select your first number:"))
 number2=float(input("Select your second number:"))
-operator=input("Choose your Operator (+,-,*,/):")
+
+while True:
+    operator=input("Select your operator (+,-,*,/): ")
+    if operator in ["+", "-","*", "/"]:
+        break
+    else:
+        print("Invalid operator")
 
 if operator=="+":
     print(float(number1+number2))
